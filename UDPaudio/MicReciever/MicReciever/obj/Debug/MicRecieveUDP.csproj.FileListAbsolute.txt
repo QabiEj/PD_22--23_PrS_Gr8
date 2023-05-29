@@ -1,0 +1,48 @@
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe.config
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.pdb
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Form1.resources
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Properties.Resources.resources
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CopyComplete
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.exe
+C:\Users\HP\source\repos\DetyraSemestrale\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.pdb
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe.config
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.pdb
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.AssemblyReference.cache
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.SuggestedBindingRedirects.cache
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Form1.resources
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Properties.Resources.resources
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.GenerateResource.cache
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CoreCompileInputs.cache
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CopyComplete
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.exe
+C:\Users\SAMIRISOFT\Desktop\semsetri 6\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.pdb
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe.config
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.pdb
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.AssemblyReference.cache
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.SuggestedBindingRedirects.cache
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Form1.resources
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Properties.Resources.resources
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.GenerateResource.cache
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CoreCompileInputs.cache
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CopyComplete
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.exe
+C:\Users\shaba\source\repos\PD_22-23_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.pdb
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe.config
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.pdb
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.AssemblyReference.cache
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.SuggestedBindingRedirects.cache
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Form1.resources
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.Properties.Resources.resources
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.GenerateResource.cache
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CoreCompileInputs.cache
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicRecieveUDP.csproj.CopyComplete
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.exe
+C:\Users\shaba\source\repos\PD_22-23_PrS_Gr8\UDPaudio\MicReciever\MicReciever\obj\Debug\MicSendUDP.pdb

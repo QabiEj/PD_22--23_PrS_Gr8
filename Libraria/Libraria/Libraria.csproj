@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Libraria</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleTCP" Version="1.0.24" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MicSendUDP">
+      <HintPath>..\..\UDPaudio\MicReciever\MicReciever\bin\Debug\MicSendUDP.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Lending.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Borrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddBorrower.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UpdateBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>TCPServer_Message_</RootNamespace>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleTCP" Version="1.0.24" />
+    <PackageReference Include="SuperSimpleTcp" Version="3.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SimpleTcp">
+      <HintPath>..\TCPClient(Messages)\bin\Debug\net5.0-windows\SimpleTcp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

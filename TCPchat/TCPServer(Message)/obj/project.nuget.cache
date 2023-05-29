@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "YD4GK1g+Y+o4Rb7qMoWO9WISjz2rXtsbFEGnQ5lYuVnvJJZMQfc5wd+Hd6jbiztRLGiKYnGPMg2zCE3KtvwGxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shaba\\source\\repos\\PD_22-23_PrS_Gr8\\TCPchat\\TCPServer(Message)\\TCPServer(Message).csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shaba\\.nuget\\packages\\simpletcp\\1.0.24\\simpletcp.1.0.24.nupkg.sha512",
+    "C:\\Users\\shaba\\.nuget\\packages\\supersimpletcp\\3.0.10\\supersimpletcp.3.0.10.nupkg.sha512",
+    "C:\\Users\\shaba\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\shaba\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\shaba\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\shaba\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SimpleTCP 1.0.24' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net5.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "SimpleTCP",
+      "targetGraphs": [
+        "net5.0-windows7.0"
+      ]
+    }
+  ]
+}
