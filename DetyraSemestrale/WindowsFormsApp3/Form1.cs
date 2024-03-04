@@ -51,8 +51,7 @@ namespace WindowsFormsApp3
 
                 // Start the streaming threads
                 isStreaming = true;
-                streamingThread = new Thread(StreamVideo);
-                streamingThread.Start();
+                
                 audioStreamingThread = new Thread(StreamAudio);
                 audioStreamingThread.Start();
 
@@ -66,56 +65,7 @@ namespace WindowsFormsApp3
             }
         }
 
-        private void StreamVideo()
-        {
-            try
-            {
-                while (isStreaming)
-                {
-                    // Read the frame dimensions
-                    byte[] widthBytes = ReadBytes(4);
-                    byte[] heightBytes = ReadBytes(4);
-
-                    // Reverse the bytes if the system architecture is little-endian
-                    if (BitConverter.IsLittleEndian)
-                    {
-                        Array.Reverse(widthBytes);
-                        Array.Reverse(heightBytes);
-                    }
-
-                    int width = BitConverter.ToInt32(widthBytes, 0);
-                    int height = BitConverter.ToInt32(heightBytes, 0);
-
-                    checked
-                    {
-                        // Ensure the frame size is not excessively large
-                        long frameSize = (long)width * height * 3; // 3 bytes per pixel for RGB
-                        if (frameSize > int.MaxValue)
-                        {
-                            throw new Exception("Frame size exceeds maximum allowable size.");
-                        }
-
-                        // Read the frame bytes
-                        byte[] frameBytes = ReadBytes((int)frameSize);
-
-                        // Create a Bitmap object from the frame bytes
-                        using (var ms = new MemoryStream(frameBytes))
-                        {
-                            Bitmap frame = new Bitmap(ms);
-                            pictureBox1.Image = frame;
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                // Show the error message
-                MessageBox.Show($"Error while receiving video: {ex.Message}");
-            }
-        }
-
-
-
+       
         private byte[] ReadBytes(int count)
         {
             byte[] bytes = new byte[count];
@@ -281,9 +231,25 @@ namespace WindowsFormsApp3
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             // eventArgs.Frame contains the current video frame.
-            // You can display it in a PictureBox, encode it, and send it to the server.
-            pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
+            Bitmap originalFrame = (Bitmap)eventArgs.Frame.Clone();
+
+            // Resize the frame
+            int newWidth = 640; // Width for 480p
+            int newHeight = 480; // Height for 480p
+            Bitmap resizedFrame = new Bitmap(originalFrame, new Size(newWidth, newHeight));
+
+            // Display it in a PictureBox
+            pictureBox1.Image = resizedFrame;
+
+            // Encode it and send it to the server
+            using (MemoryStream ms = new MemoryStream())
+            {
+                resizedFrame.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                byte[] frameBytes = ms.ToArray();
+                // TODO: Send frameBytes to the server
+            }
         }
+
 
         private void audioSource_DataAvailable(object sender, WaveInEventArgs e)
         {

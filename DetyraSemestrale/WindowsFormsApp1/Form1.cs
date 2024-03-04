@@ -10,6 +10,8 @@ using NAudio.Wave;
 using System.Windows.Forms;
 using System.IO;
 using System.Threading.Tasks;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 
 namespace WindowsFormsApp1
 {
@@ -82,25 +84,53 @@ namespace WindowsFormsApp1
 
             pictureBox1.Image = (Bitmap)eventArgs.Frame.Clone();
         }
+        private Bitmap ResizeImage(Image image, int width, int height)
+        {
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = CompositingMode.SourceCopy;
+                graphics.CompositingQuality = CompositingQuality.HighQuality;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
+        }
 
         private void VideoCaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             // Clone the new frame
-            Bitmap frame = (Bitmap)eventArgs.Frame.Clone();
+            Bitmap originalFrame = (Bitmap)eventArgs.Frame.Clone();
+
+            // Resize the frame
+            Bitmap resizedFrame = ResizeImage(originalFrame, 640, 480); // Resize to 480p
+                                                                       
 
             if (isStreaming)
             {
                 try
                 {
-                    // Convert the frame to a byte array
-                    byte[] frameBytes = ImageToByteArray(frame);
+                    // Convert the resized frame to a byte array
+                    byte[] frameBytes = ImageToByteArray(resizedFrame);
 
                     // Send the frame dimensions and bytes to the client
                     if (networkStream != null && networkStream.CanWrite)
                     {
                         // Send frame dimensions (width and height)
-                        byte[] widthBytes = BitConverter.GetBytes(frame.Width);
-                        byte[] heightBytes = BitConverter.GetBytes(frame.Height);
+                        byte[] widthBytes = BitConverter.GetBytes(resizedFrame.Width);
+                        byte[] heightBytes = BitConverter.GetBytes(resizedFrame.Height);
 
                         networkStream.Write(widthBytes, 0, widthBytes.Length);
                         networkStream.Write(heightBytes, 0, heightBytes.Length);
@@ -117,8 +147,9 @@ namespace WindowsFormsApp1
                 }
             }
 
-            // Dispose the frame object to free up system resources
-            frame.Dispose();
+            // Dispose the frame objects to free up system resources
+            originalFrame.Dispose();
+            resizedFrame.Dispose();
 
             // Update the picture box on the UI thread
             if (pictureBox1.InvokeRequired)
